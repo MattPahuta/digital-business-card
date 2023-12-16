@@ -1,0 +1,72 @@
+/*
+Author: Matt Pahuta
+https://www.mattpahuta.com
+Date: December 2023
+*/
+
+:root {
+  /* font-family: 'Inter', sans-serif; */
+  --ff-primary: 'Inter', sans-serif;
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-500: ;
+  --fs-600: ;
+  --fs-700: 1.5625rem;
+  /* Font Weights */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* Colors */
+  --clr-white: #FFFFFF;
+  --clr-off-white: #DCDCDC;
+
+  --bg-extra-dark: #23252C;
+  --bg-dark: #1A1B21;
+
+}
+
+/* RESET */
+/* Josh Comeau custom css reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  color: var(--clr-off-white);
+  background: var(--bg-extra-dark);
+}
