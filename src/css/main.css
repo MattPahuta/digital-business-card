@@ -7,11 +7,11 @@ Date: December 2023
 :root {
   /* font-family: 'Inter', sans-serif; */
   --ff-primary: 'Inter', sans-serif;
-  --fs-300: 0.75rem;
+  --fs-300: 0.875rem;
   --fs-400: 1rem;
-  --fs-500: ;
-  --fs-600: ;
-  --fs-700: 1.5625rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.375rem;
+  --fs-700: 1.875rem;
   /* Font Weights */
   --fw-400: 400;
   --fw-500: 500;
@@ -19,10 +19,18 @@ Date: December 2023
 
   /* Colors */
   --clr-white: #FFFFFF;
+  --clr-soft-white: #F5F5F5;
   --clr-off-white: #DCDCDC;
+  --clr-near-black: #1E1F26;
+  --clr-blue: #5093E2;
+  --clr-soft-orange: #F3BF99;
 
   --bg-extra-dark: #23252C;
   --bg-dark: #1A1B21;
+
+  /* Border Radius */
+  --br-extra-soft: 6px;
+  --br-soft: 10px;
 
 }
 
@@ -65,8 +73,88 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Base Styles */
 body {
+  display: grid;
+  place-items: center;
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
   color: var(--clr-off-white);
   background: var(--bg-extra-dark);
 }
+
+.card {
+  max-width: 320px;
+  overflow: hidden;
+  border-radius: var(--br-soft);
+  background: var(--bg-dark);
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  font-size: var(--fs-400);
+  border-radius: var(--br-extra-soft);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+}
+
+.profile-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info,
+.about,
+.interests {
+  padding-inline: 2.25rem;
+}
+
+/* Info Section */
+.info {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.name-heading {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-700);
+  color: var(--clr-white);
+}
+
+.title {
+  margin-bottom: .5rem;
+  color: var(--clr-soft-orange);
+}
+
+.web-link {
+  font-size: var(--fs-300);
+  color: var(--clr-soft-white);
+  text-decoration: none;
+}
+
+.button-container {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.email-button {
+  background: var(--clr-white);
+  color: var(--clr-near-black);
+}
+
+.social-button {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+}
+
+/* About, Interests Sections */
+
+/* Footer */
