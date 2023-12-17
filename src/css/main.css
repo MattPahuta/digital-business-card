@@ -14,7 +14,7 @@ Date: December 2023
   --fs-700: 1.875rem;
   /* Font Weights */
   --fw-400: 400;
-  --fw-500: 500;
+  --fw-600: 600;
   --fw-700: 700;
 
   /* Colors */
@@ -22,11 +22,11 @@ Date: December 2023
   --clr-soft-white: #F5F5F5;
   --clr-off-white: #DCDCDC;
   --clr-near-black: #1E1F26;
-  --clr-blue: #5093E2;
-  --clr-soft-orange: #F3BF99;
+  --clr-linkedin-blue: #0077B5;
+  --clr-orange: #FCA311;
 
   --bg-extra-dark: #23252C;
-  --bg-dark: #1A1B21;
+  --bg-dark: #14213D;
 
   /* Border Radius */
   --br-extra-soft: 6px;
@@ -103,15 +103,20 @@ a.button {
   min-height: 44px;
 }
 
-.profile-image {
-  width: 100%;
-  object-fit: cover;
-}
-
 .info,
 .about,
-.interests {
+.interests,
+.footer {
   padding-inline: 2.25rem;
+}
+
+.about, .interests {
+  padding-bottom: 1rem;
+}
+
+.about h2, .interests h2 {
+  color: var(--clr-white);
+  font-weight: var(--fw-600);
 }
 
 /* Info Section */
@@ -128,8 +133,9 @@ a.button {
 }
 
 .title {
+  font-size: var(--fs-400);
   margin-bottom: .5rem;
-  color: var(--clr-soft-orange);
+  color: var(--clr-orange);
 }
 
 .web-link {
@@ -151,10 +157,22 @@ a.button {
 }
 
 .social-button {
-  background-color: var(--clr-blue);
+  background-color: var(--clr-linkedin-blue);
   color: var(--clr-white);
 }
 
 /* About, Interests Sections */
 
 /* Footer */
+.footer {
+  padding-block: 1.25rem;
+  background: var(--clr-near-black);
+}
+
+.socials-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}

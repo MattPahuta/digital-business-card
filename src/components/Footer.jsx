@@ -1,11 +1,30 @@
+
+import TwitterIcon from '../assets/twitter-icon.svg'
+
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <ul className="socials-list">
-        <li className="social-item">LinkedIn</li>
-        <li className="social-item">Bluesky</li>
-        <li className="social-item">Twitter</li>
-        <li className="social-item">GitHub</li>
+        <li className="social-item">
+          <a href="" className="social-link">
+            <img src={TwitterIcon} alt="Twitter logo" />
+          </a>
+        </li>
+        <li className="social-item">
+          <a href="" className="social-link">
+            <img src={TwitterIcon} alt="Twitter logo" />
+          </a>
+        </li>
+        <li className="social-item">
+          <a href="" className="social-link">
+            <img src={TwitterIcon} alt="Twitter logo" />
+          </a>
+        </li>
+        <li className="social-item">
+          <a href="" className="social-link">
+            <img src={TwitterIcon} alt="Twitter logo" />
+          </a>
+        </li>
       </ul>
     </footer>
   )
