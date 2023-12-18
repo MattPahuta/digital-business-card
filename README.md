@@ -30,7 +30,7 @@ This is my solution to the [Scrimba](https://scrimba.com/) solo project, Digital
 ### Links
 
 - [Scrimba Scrim](https://scrimba.com/scrim/co120400b8b16ed60b0895eda)
-- [Live Site](https://your-live-site-url.com)
+- [Live Site](https://heroic-babka-891e56.netlify.app/)
 
 ## My process
 
