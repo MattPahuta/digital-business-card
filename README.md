@@ -1,8 +1,51 @@
-# React + Vite
+# Digital Business Card - A Scrimba FEWD Solo Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my solution to the [Scrimba](https://scrimba.com/) solo project, Digital Business Card, part of the React basics module of the Frontend Career Path. 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The requirements](#the-requirements)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+
+
+## Overview
+
+### The requirements
+
+- Built with React
+- Built from scratch
+- Follow design comp but customized with your own information
+- Utilize separate components for: Info, About, Interests
+
+### Screenshot
+
+![](./project-ss.png)
+
+
+### Links
+
+- [Scrimba Scrim](https://scrimba.com/scrim/co120400b8b16ed60b0895eda)
+- [Live Site](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+
+
+## Author
+
+- Website - [Matt Pahuta](https://www.mattpahuta.com)
+- Twitter - [@mattpahuta](https://www.twitter.com/MattPahuta)
+- LinkedIn - [Matt Pahuta](www.linkedin.com/in/mattpahuta)
