@@ -16,22 +16,19 @@ Date: December 2023
   --fw-400: 400;
   --fw-600: 600;
   --fw-700: 700;
-
   /* Colors */
-  --clr-white: #FFFFFF;
-  --clr-soft-white: #F5F5F5;
-  --clr-off-white: #DCDCDC;
-  --clr-near-black: #1E1F26;
-  --clr-linkedin-blue: #0077B5;
-  --clr-orange: #FCA311;
-
-  --bg-extra-dark: #23252C;
-  --bg-dark: #14213D;
-
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-soft-white: hsl(0, 0%, 96%);
+  --clr-light-gray: hsl(0, 0%, 84%);
+  --clr-near-black: hsl(233, 12%, 13%);
+  --clr-linkedin-blue: hsl(201, 100%, 35%);
+  --clr-orange: hsl(37, 98%, 53%);
+  /* backgrounds */
+  --bg-extra-dark: hsl(227, 11%, 15%);
+  --bg-dark: hsl(221, 51%, 16%);
   /* Border Radius */
   --br-extra-soft: 6px;
   --br-soft: 10px;
-
 }
 
 /* RESET */
@@ -77,7 +74,7 @@ body {
   place-items: center;
   font-family: var(--ff-primary);
   font-size: var(--fs-300);
-  color: var(--clr-off-white);
+  color: var(--clr-light-gray);
   background: var(--bg-extra-dark);
 }
 
@@ -97,10 +94,14 @@ a.button {
   font-size: var(--fs-400);
   border-radius: var(--br-extra-soft);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-
-  padding: 0.25em 0.75em;
+  padding: 0.5em 0.75em;
   min-width: 10ch;
-  min-height: 44px;
+  transition: 200ms all ease-in-out;
+}
+
+a.button:hover,
+a.button:focus {
+  opacity: 0.8;
 }
 
 .info,
@@ -110,8 +111,13 @@ a.button {
   padding-inline: 2.25rem;
 }
 
-.about, .interests {
+.about {
   padding-bottom: 1rem;
+}
+
+.info,
+.interests {
+  padding-bottom: 2rem;
 }
 
 .about h2, .interests h2 {
@@ -120,9 +126,13 @@ a.button {
 }
 
 /* Info Section */
+.profile-image {
+  width: 100%;
+  object-fit: cover;
+}
+
 .info {
   padding-top: 1.25rem;
-  padding-bottom: 2rem;
   text-align: center;
 }
 
@@ -142,6 +152,13 @@ a.button {
   font-size: var(--fs-300);
   color: var(--clr-soft-white);
   text-decoration: none;
+  transition: 200ms all ease-in-out;
+}
+
+.web-link:hover,
+.web-link:focus {
+  color: var(--clr-light-gray);
+  text-decoration: underline;
 }
 
 .button-container {
